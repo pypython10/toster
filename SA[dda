@@ -1,0 +1,20 @@
+secret = ['Кот съел пса', 'Я не приёмный', 'Готово']
+parol = '12345'
+
+while True:
+    a = input('Введите пароль:')
+    if a == parol:
+        a = input('Введите номер ')
+        print(secret[int(a)])
+        b = input('Нажмите 1, что бы поменять пароль ')
+        if b == '1':
+            parol = input()
+        elif b == '2':
+            c = input()
+            secret.append(c)
+            parol = input()
+        elif b == '3':
+            secret.remove()
+            print(secret)
+    else:
+        print('Пароль не првельный, введите новый')
